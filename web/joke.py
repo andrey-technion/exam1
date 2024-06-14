@@ -11,14 +11,14 @@ def joke():
 
         joke = userDict['value']
 
-        return f'Hi {joke}!!'
+        return f'{joke}'
 
     except Exception as e:
         return f"An error occurred: {e}"
 
 
 def main() -> None:
-    app.run(port=8001, debug=True)
+    app.run(port=8001, host="0.0.0.0", debug=True)
 
 
 if __name__ == '__main__':
