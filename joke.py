@@ -11,7 +11,7 @@ def joke():
 
         joke = userDict['value']
 
-        return f'Hi {joke}!!'
+        return f'{joke}!!'
 
     except Exception as e:
         return f"An error occurred: {e}"
